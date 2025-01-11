@@ -10,13 +10,16 @@ body{
 .section-1{
     background-color: rgba(0, 0, 0, 1);
     width:100%;
-    
-    
+    padding-top:100px;
+    padding-bottom: 200px; 
 }
 nav{
+    border: 1px solid gray;
+    background-color: gray;
     display: flex;
     gap: 60px;
     width: 700vh;
+    text-align: center;
     align-items: center;
     position:fixed;
     top: 0px;
@@ -33,6 +36,7 @@ ul{
    
 }
 li{
+    text-align: center;
     list-style: none;
     margin-top: 20px;
     cursor: pointer;
@@ -48,13 +52,6 @@ li:hover{
     font-family: 'Raleway',sans-serif;
 }
 
-    
-
-
-
-    
-  
-}
 .point{
     margin-left: -10px;
     color: #ffc451;
@@ -85,6 +82,7 @@ button:hover{
 
 
 h2{
+    margin-top: 200px;
     font-size: 56px;
     font-family: 'Poppins',sans-serif;
     color: #ffffff;
@@ -100,11 +98,11 @@ h2{
     color: #ffc451;
 }
 p{
-
-    font-size: 21px;
-    color: rgba(1, 1, 1, 0.8);
+  font-size: 21px;
+    color:gray;
     margin-top:10px;
     text-align: center;
+    margin-bottom:70px ;
 }
 .solution{
     text-align: center;
@@ -112,11 +110,19 @@ p{
 .row{
    display: grid;
    grid-template-columns: repeat(5,1fr);
+   justify-items: center;
+   gap: -30px;
+
 }
 .card{
     border: 2px solid white;
-    padding:100px;
-    width: 100px;
-    
-
+    height:156px;
+    width: 166px;
+    color:black;
+    background-color: #ffffff;
+}
+i{
+    width: 32px;
+    height: 32px;
+    color: #FFD43B;
 }
