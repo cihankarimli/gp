@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"vscode-pets.throwBallWithMouse": true,
+		"vscode-pets.theme": "none"
+	}
+}
