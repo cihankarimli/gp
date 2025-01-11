@@ -4,11 +4,19 @@
     box-sizing: border-box;
 }
 body{
-    width:max-content;
+    width:100dh;
+   
 }
-
+.section-1{
+    background-color: rgba(0, 0, 0, 1);
+    width:100%;
+    
+    
+}
 nav{
     display: flex;
+    gap: 60px;
+    width: 700vh;
     align-items: center;
     position:fixed;
     top: 0px;
@@ -17,15 +25,16 @@ nav{
     
 }
 ul{
-
-    list-style-type: none;
     display: flex;
+    list-style-type: none;
     align-items: center;
     gap:60px;
     padding: 40px;
    
 }
 li{
+    list-style: none;
+    margin-top: 20px;
     cursor: pointer;
     font-size: 16px;
     font-family: 'Poppins',sans-serif;
@@ -35,33 +44,26 @@ li:hover{
 }
 .top-name{
     margin-right:300px;
-    font-size: 20px;
+    font-size: 30px;
     font-family: 'Raleway',sans-serif;
 }
-.home{
-    color:#ffc451;
-    
-}
 
-.background-image{
     
-    position: relative;
-    margin-top: -200px;
-    margin-left: -400px;
-    opacity:75%;    
+
+
+
+    
   
 }
 .point{
     margin-left: -10px;
     color: #ffc451;
 }
-h1{
-
-}
 .top-name:hover{
     color: #ffffff;
 }
 button{
+    margin-top: 20px;
     align-items: center;
     justify-content: center;
     padding: 8px,30px;
@@ -80,20 +82,41 @@ button:hover{
     color: grey;
     background-color: #ffc451;
 }
-.section-1{
-    width: max-content;
-    background-image:url(https://bootstrapmade.com/content/demo/Gp/assets/img/hero-bg.jpg);
-    background-color: rgba(0, 0, 0, 0.5) ;
+
+
+h2{
+    font-size: 56px;
+    font-family: 'Poppins',sans-serif;
+    color: #ffffff;
+    text-align: center;
+    justify-items: center;
+    align-content: center;
+ 
+   
+    
 
 }
-h2{
-    position: absolute;
-    top: 200px;
-    left: 300px;
-    margin: 0;
-    font-size: 56px;
-    font-weight: 700;
-    font-family: var(--nav-font);
-    color: #ffffff;
+.content{
+    color: #ffc451;
+}
+p{
+
+    font-size: 21px;
+    color: rgba(1, 1, 1, 0.8);
+    margin-top:10px;
+    text-align: center;
+}
+.solution{
+    text-align: center;
+}
+.row{
+   display: grid;
+   grid-template-columns: repeat(5,1fr);
+}
+.card{
+    border: 2px solid white;
+    padding:100px;
+    width: 100px;
+    
 
 }
