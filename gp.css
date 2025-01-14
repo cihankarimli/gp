@@ -7,16 +7,17 @@ body{
     width:100dh;
    
 }
-.section-1{
-    background-color: rgba(0, 0, 0, 1);
+.home-section{
+    background:url(https://bootstrapmade.com/content/demo/Gp/assets/img/hero-bg.jpg);
+    background-color: rgba(0, 0, 0, 0.7);
     width:100%;
     padding-top:100px;
     padding-bottom: 200px; 
+    background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: darken;
 }
 nav{
-    border: 1px solid gray;
-    background-color: gray;
-    display: flex;
+   display: flex;
     gap: 60px;
     width: 700vh;
     text-align: center;
@@ -25,6 +26,7 @@ nav{
     top: 0px;
     margin-top: auto;
     color:#ffffff;
+    background-color: rgba(0, 0, 0, 0.719);
     
 }
 ul{
@@ -47,6 +49,7 @@ li:hover{
     color: #ffc451;
 }
 .top-name{
+    margin-left: 30px;
     margin-right:300px;
     font-size: 30px;
     font-family: 'Raleway',sans-serif;
@@ -97,9 +100,10 @@ h2{
 .content{
     color: #ffc451;
 }
-p{
+.home-content{
   font-size: 21px;
-    color:gray;
+    color:#e9ecef;
+    font-size: 24px;
     margin-top:10px;
     text-align: center;
     margin-bottom:70px ;
@@ -111,18 +115,277 @@ p{
    display: grid;
    grid-template-columns: repeat(5,1fr);
    justify-items: center;
-   gap: -30px;
+   align-items: center;
 
 }
 .card{
-    border: 2px solid white;
-    height:156px;
-    width: 166px;
-    color:black;
-    background-color: #ffffff;
+    border: 3px solid white;
+    height:166px;
+    width: 200px;
+    color:black;   
+    text-align: center;
+    font-size:24px;
+    font-family: 'Raleway',sans-serif;
+    color: #e9ecef;
+    text-justify: center;  
+    cursor: pointer;
+    
+  
+    
 }
 i{
     width: 32px;
     height: 32px;
     color: #FFD43B;
 }
+.card:hover{
+    border: 3px solid #FFD43B;
+   color: #FFD43B;
+
+}
+
+.logo{
+    display: flex;
+    margin-top: 30px;
+    justify-self: center;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+.about-photo{
+    width: 546px;
+    height: 409px;
+}
+.part-1{
+    margin-top: 90px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-self: center;
+    justify-self: center;
+    padding: 120px,0;
+    margin-left: 100px;
+    
+    
+}
+.written-1 div{
+    margin-top: 30px;
+    font-family: Roboto,system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+}
+h3{
+    font-family: 'Raleway',sans-serif;
+    font-size: 28px;
+}
+.part-2 img{
+    width: 600px;
+    height: 380px;
+}
+.part-2{
+    margin-top: 120px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+h4{
+    margin-top: 50px;
+    font-size: 20px;
+    font-family: 'Raleway',sans-serif;
+}
+.write-1{
+    color: rgba(0, 0, 0, 0.241);
+    font-size: 15px;
+}
+.written-2{
+    margin-left: 30px;
+}
+
+section{
+    width: 100dh;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0; 
+      transform: translateY(-100px); 
+    }
+    to {
+      opacity: 1; 
+      transform: translateY(0); 
+    }
+}
+
+
+@media (max-width: 1024px) {
+    nav {
+      gap: 30px;
+      width: auto;
+      flex-wrap: wrap;
+      padding: 20px;
+    }
+  
+    .top-name {
+      margin-right: 150px;
+      font-size: 24px;
+    }
+  
+    ul {
+      gap: 30px;
+      padding: 20px;
+    }
+  
+    li {
+      font-size: 14px;
+    }
+  
+    h2 {
+      font-size: 36px;
+    }
+  
+    .row {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+  
+    .card {
+      height: 150px;
+      width: 180px;
+    }
+  
+    .about-photo {
+      width: 400px;
+      height: 300px;
+    }
+  
+    .part-2 img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  
+  @media (max-width: 768px) {
+    .container {
+      max-width: 100%;
+      padding: 0 10px;
+    }
+  
+    nav {
+      gap: 10px;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px;
+    }
+  
+    .top-name {
+      margin-right: 0;
+      font-size: 20px;
+    }
+  
+    ul {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+      padding: 0;
+    }
+  
+    li {
+      font-size: 12px;
+    }
+  
+    button {
+      width: 100px;
+      height: 35px;
+    }
+  
+    h2 {
+      font-size: 28px;
+      margin-top: 50px;
+    }
+  
+    .home-content {
+      font-size: 16px;
+      margin-bottom: 50px;
+    }
+  
+    .row {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 15px;
+    }
+  
+    .card {
+      height: 140px;
+      width: 100%;
+    }
+  
+    .about-photo {
+      width: 100%;
+      height: auto;
+    }
+  
+    .part-1,
+    .part-2 {
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-content: center;
+      align-content: center;
+    }
+  }
+  
+  /* Responsive styles for very small screens (480px və daha kiçik ekranlar üçün) */
+  @media (max-width: 480px) {
+    nav {
+      gap: 5px;
+      padding: 5px;
+    }
+  
+    .top-name {
+      font-size: 18px;
+    }
+  
+    ul {
+      gap: 5px;
+    }
+  
+    li {
+      font-size: 10px;
+    }
+  
+    button {
+      width: 80px;
+      height: 30px;
+      font-size: 12px;
+    }
+  
+    h2 {
+      font-size: 24px;
+    }
+  
+    .row {
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+  
+    .card {
+      height: 120px;
+      width: 100%;
+    }
+  
+    .home-content {
+      font-size: 14px;
+    }
+  
+    .about-photo,
+    .part-2 img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .part-1,
+    .part-2 {
+      margin-left: 0;
+      grid-template-columns: 1fr;
+    }
+  }
+  
