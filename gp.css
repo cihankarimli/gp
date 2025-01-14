@@ -123,21 +123,35 @@ h2{
     height:166px;
     width: 200px;
     color:black;   
-    text-align: center;
+  display: grid;
+    align-content: center;
+    justify-content: center;
     font-size:24px;
     font-family: 'Raleway',sans-serif;
     color: #e9ecef;
-    text-justify: center;  
     cursor: pointer;
     border-radius: 7px;
-    
-  
-    
-}
-i{
+}   
+  .logo-card{
+    margin-right: 30px;
     width: 32px;
-    height: 32px;
+    
+  }
+  .card .p{
+    font-size: 20px;
+    font-family: 'Railway',sans-serif;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+    
+
+.card i{
+    width: 30px;
+    height: 30px;
     color: #FFD43B;
+    margin-left:60px;
+    margin-bottom:10px;
 }
 .card:hover{
     border: 3px solid #FFD43B;
@@ -205,6 +219,57 @@ section{
     width: 100dh;
     animation: fadeIn 2s ease-in-out;
   }
+  .section-services{
+    width: 1100px;
+    margin-left: 70px;
+    padding-top: 60px;
+  }
+  .services-row{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    gap: 40px;
+    margin-left: 50px;
+  }
+  .card-services{
+    width: 354px;
+    height: 354px;
+    border: 1px solid rgb(205, 200, 200);
+    padding-top: 60px;
+   display: flex;
+   justify-content: start;
+   align-items: center;
+   flex-direction: column;
+   gap: 30px;
+   text-align: center;
+   border-radius: 7px;
+   
+  }
+  .card-services:hover{
+    transform: translateY(-20px);
+    cursor: pointer;
+    -webkit-box-shadow: 10px 3px 50px -1px rgba(66,61,66,0.88);
+-moz-box-shadow: 10px 3px 50px -1px rgba(66,61,66,0.88);
+box-shadow: 10px 3px 50px -1px rgba(66,61,66,0.88);
+  }
+  .card-services i{
+    color: black;
+    border: 1px solid #FFD43B;
+    width: 60px;
+    height:60px ;
+    background-color: #ffce3b;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    border-radius: 7px;
+   }
+   .card-services h2{
+    font-family: "Railway",sans-serif;
+   }
+   .card-services p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+   }
+    
   
   @keyframes fadeIn {
     from {
@@ -218,7 +283,10 @@ section{
 }
 
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
+  .container{
+    width:1300px
+  }
     nav {
       gap: 30px;
       width: auto;
@@ -263,14 +331,27 @@ section{
       width: 100%;
       height: auto;
     }
+    .services-row{
+      display: grid;
+      grid-template-columns:repeat(3,1fr);
+      align-items: center;
+      justify-content: center; 
+      width: 50%;
+      width: 1000px;
+    }
   }
+
+ 
+
   
-  
-  @media (max-width: 768px) {
+  @media (max-width: 600px) {
+    
     .container {
       max-width: 100%;
       padding: 0 10px;
+      overflow: hidden;
     }
+
   
     nav {
       gap: 10px;
@@ -333,9 +414,26 @@ section{
       align-content: center;
     }
   }
+  .section-services{
+    width:100vw
+  }
+  .services-row{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-content: center;
+    justify-content: center; 
+    margin-bottom: 30px;
+    margin-right: 80px;  
+    width: 76%;
+  }
   
-  /* Responsive styles for very small screens (480px və daha kiçik ekranlar üçün) */
+  
+  
   @media (max-width: 480px) {
+    .container{
+      overflow: hidden;
+      
+    }
     nav {
       gap: 5px;
       padding: 5px;
@@ -388,5 +486,33 @@ section{
       margin-left: 0;
       grid-template-columns: 1fr;
     }
+    .section-services{
+      width: 100%;
+    }
+    .services-row {
+      grid-template-columns: 1fr;
+      gap: 20px;
+      width: 25%;
+     
+    }
+  
+    .card-services {
+      padding: 20px;
+      gap: 10px;
+    }
+  
+    .card-services i {
+      width: 40px;
+      height: 40px;
+    }
+  
+    .card-services h3 {
+      font-size: 14px;
+    }
+  
+    .card-services p {
+      font-size: 13px;
+    }
   }
+  
   
