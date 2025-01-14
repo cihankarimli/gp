@@ -3,9 +3,8 @@
     margin: 0;
     box-sizing: border-box;
 }
-body{
-    width:100dh;
-   
+.container{
+  overflow: hidden;
 }
 .home-section{
     background:url(https://bootstrapmade.com/content/demo/Gp/assets/img/hero-bg.jpg);
@@ -221,14 +220,18 @@ section{
   }
   .section-services{
     width: 1100px;
-    margin-left: 70px;
+    display: grid;
+    align-content: center;
+    justify-content: center;
     padding-top: 60px;
   }
   .services-row{
     display: grid;
     grid-template-columns:repeat(3,1fr);
     gap: 40px;
-    margin-left: 50px;
+    align-content: center;
+    justify-content: center;
+    
   }
   .card-services{
     width: 354px;
@@ -283,9 +286,10 @@ box-shadow: 10px 3px 50px -1px rgba(66,61,66,0.88);
 }
 
 
-@media (max-width: 1200px) {
+@media (max-width: 1100px) {
   .container{
-    width:1300px
+   
+    overflow: hidden;
   }
     nav {
       gap: 30px;
@@ -313,8 +317,9 @@ box-shadow: 10px 3px 50px -1px rgba(66,61,66,0.88);
     }
   
     .row {
+      display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 30px;
+      gap: 10px;
     }
   
     .card {
@@ -332,19 +337,16 @@ box-shadow: 10px 3px 50px -1px rgba(66,61,66,0.88);
       height: auto;
     }
     .services-row{
+      width: 1000px;
       display: grid;
       grid-template-columns:repeat(3,1fr);
-      align-items: center;
-      justify-content: center; 
-      width: 50%;
-      width: 1000px;
-    }
+     }
   }
 
  
 
   
-  @media (max-width: 600px) {
+  @media (max-width: 834px) {
     
     .container {
       max-width: 100%;
@@ -385,20 +387,22 @@ box-shadow: 10px 3px 50px -1px rgba(66,61,66,0.88);
       font-size: 28px;
       margin-top: 50px;
     }
-  
+  .home-section{
+    width: 100vw;
+  }
     .home-content {
       font-size: 16px;
       margin-bottom: 50px;
     }
   
     .row {
-      grid-template-columns: repeat(1, 1fr);
+      grid-template-columns: repeat(2, 1fr);
       gap: 15px;
     }
   
     .card {
       height: 140px;
-      width: 100%;
+      
     }
   
     .about-photo {
@@ -415,25 +419,26 @@ box-shadow: 10px 3px 50px -1px rgba(66,61,66,0.88);
     }
   }
   .section-services{
-    width:100vw
+    width:100vw;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+   
   }
   .services-row{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    align-content: center;
-    justify-content: center; 
-    margin-bottom: 30px;
-    margin-right: 80px;  
-    width: 76%;
   }
+ 
   
   
   
   @media (max-width: 480px) {
     .container{
       overflow: hidden;
-      
+      width: 100%;
     }
+    
     nav {
       gap: 5px;
       padding: 5px;
@@ -470,15 +475,21 @@ box-shadow: 10px 3px 50px -1px rgba(66,61,66,0.88);
       height: 120px;
       width: 70%;
     }
-  
+  .home-section{
+    width: 100vw;
+  }
     .home-content {
       font-size: 14px;
     }
   
     .about-photo,
     .part-2 img {
-      width: 100%;
+      width: 100vw;
       height: auto;
+      margin: 0 auto;
+    }
+    .written-1,.written-2{
+      text-align: center;
     }
   
     .part-1,
@@ -487,32 +498,23 @@ box-shadow: 10px 3px 50px -1px rgba(66,61,66,0.88);
       grid-template-columns: 1fr;
     }
     .section-services{
-      width: 100%;
+      width:260vw;
+      display: grid;
+      align-content: center;
+      justify-content: center;
     }
     .services-row {
-      grid-template-columns: 1fr;
-      gap: 20px;
-      width: 25%;
-     
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+      justify-content: center;
+      align-content: center;
+     }
+     .card-services{
+      max-width:50%;
+     }
+
+  
     }
   
-    .card-services {
-      padding: 20px;
-      gap: 10px;
-    }
-  
-    .card-services i {
-      width: 40px;
-      height: 40px;
-    }
-  
-    .card-services h3 {
-      font-size: 14px;
-    }
-  
-    .card-services p {
-      font-size: 13px;
-    }
-  }
   
   
