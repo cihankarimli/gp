@@ -364,13 +364,13 @@ section{
     }
   
     .row {
-      grid-template-columns: 1fr;
+      grid-template-columns: repeat(1,1fr);
       gap: 10px;
     }
   
     .card {
       height: 120px;
-      width: 100%;
+      width: 70%;
     }
   
     .home-content {
