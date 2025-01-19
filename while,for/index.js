@@ -12,6 +12,7 @@ if (firstNumber>secondNumber && firstNumber>thirdNumber){
     alert(thirdNumber)
 }*/
 
+
 //2 ci tapsiriq
 /*let year=prompt('il daxil edin')
 if (year % 4 === 0 && (year % 100 !== 0 || year % 400 === 0)) {
