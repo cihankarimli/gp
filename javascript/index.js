@@ -1,19 +1,58 @@
-/*Tapşırıq:
-Grade adlanan field-imiz var
+/*
+let cars = [
+    {
+        name: "Land Rover",
+        model: "RR Sport",
+        year: 2023,
+        color: "black",
+        engine: {
+            name: "AJ-V8",
+            fuel: "Petrol"
+        }
+    },
+    {
+        name: "BMW",
+        model: "RR Sport",
+        year: 2021,
+        color: "black",
+        engine: {
+            name: "AJ-V8",
+            fuel: "Petrol"
+        }
+    },
+    {
+        name: "Mercedes",
+        model: "RR Sport",
+        year: 2017,
+        color: "black",
+        engine: {
+            name: "AJ-V8",
+            fuel: "Petrol"
+        }
+    }
+];
+let newCar=
+    {
+        name: "Lombargini",
+        model: "RR Sport",
+        year: 2017,
+        color: "black",
+        engine: {
+            name: "AJ-V8",
+            fuel: "Petrol"
+        }
+    }
 
-Əgər 90-dan yuxarıdırsa alert versin ki,Əlaçı
-70-90 arası alert versin yaxşı
 
-50-70 arası alert versin kafi
-
-0-50 kəst*/
-let number=Number(prompt('Nece bal aldi?'))
-if(number>90){
-    alert('Elaci')
-}else if(70<number && 90>=number){
-    alert('Yaxsi')
-}else if(50<number && 70>=number ){
-    alert('Kafi')
-}else if(50>=number){
-    alert('Kesildin')
+for(i=cars.length;i>0;i--){
+    cars[i]=cars[i-1];
 }
+cars[0]=newCar;
+
+
+for(i=0;i<cars.length;i++){
+    if(cars[i].year<2020 && cars[i].year>2016){
+      console.log(cars[i])        
+    }
+    
+}*/
