@@ -306,7 +306,8 @@ box-shadow: 10px 3px 50px -1px rgba(66,61,66,0.88);
   gap: 20px;
   width: 100%;
   max-width: 1200px;
-  margin: 0 auto; /* Ortalamak için */
+  margin: 100px auto; 
+  
 }
 
 .section-services {
@@ -453,7 +454,7 @@ box-shadow: 10px 3px 50px -1px rgba(66,61,66,0.88);
     }
   
     .row {
-      grid-template-rows: repeat(3, 1fr);
+      grid-template-columns:  repeat(3, 1fr);
       gap: 15px;
     }
   
@@ -492,6 +493,9 @@ box-shadow: 10px 3px 50px -1px rgba(66,61,66,0.88);
     grid-template-columns: repeat(2,1fr);
     justify-content: center;
     align-items: center;
+  }
+  .card-services:hover {
+    transform: scale(1); 
   }
 }
   
@@ -573,6 +577,9 @@ box-shadow: 10px 3px 50px -1px rgba(66,61,66,0.88);
      .card-services{
       max-width:75%;
      }
+     .card-services:hover {
+      transform: scale(1.0); 
+    }
 
   
     }
