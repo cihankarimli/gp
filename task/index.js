@@ -1,7 +1,7 @@
 //task-1
 
 
-/* let searchId=11070
+/*  let searchId=11070
  for(let i=0;i<data.length;i++){
      if(data[i].id===searchId){
          town=data[i].shipAddress.country
