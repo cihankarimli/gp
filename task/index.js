@@ -61,7 +61,7 @@ console.log(detailsLength);*/
 let unitPrice=""
 let quantity=""
 let discount=""
-let searchId=11310
+let searchId=10310
 for(let i=0;i<data.length;i++){
     if(data[i].id==searchId){
         
@@ -74,7 +74,5 @@ for(let i=0;i<data.length;i++){
        
     }
     console.log(earnings);
-   
-    
 }
 }*/
