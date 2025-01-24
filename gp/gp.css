@@ -5,6 +5,7 @@
 }
 .container{
   overflow: hidden;
+
 }
 .home-section{
     background:url(https://bootstrapmade.com/content/demo/Gp/assets/img/hero-bg.jpg);
@@ -115,6 +116,7 @@ h2{
    grid-template-columns: repeat(5,1fr);
    justify-items: center;
    align-items: center;
+   margin: 0 100px;
 
 }
 .card{
@@ -537,6 +539,7 @@ box-shadow: 10px 3px 50px -1px rgba(66,61,66,0.88);
     .row {
       grid-template-columns: repeat(1,1fr);
       gap: 10px;
+      margin: 0 50px;
     }
   
     .card {
