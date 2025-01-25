@@ -76,3 +76,51 @@ for(let i=0;i<data.length;i++){
     console.log(earnings);
 }
 }*/
+// function sayac(){
+// let sayi=0
+// return function artir(){
+//     sayi++
+//     console.log(sayi);
+    
+// }
+
+// }
+// console.log(artir());
+
+function Animal(type) {
+    this.type = type;
+  }
+  Animal.prototype.eat = function () {
+    console.log(`${this.type} yemək yeyir.`);
+  };
+  
+  const dog = new Animal("İt");
+  dog.eat(); // İt yemək yeyir.
+  console.log(dog.__proto__ === Animal.prototype); // true
+
+
+
+
+
+ const animal={
+    eat(){
+    console.log("yemey yeyir");
+    }
+}
+
+  const tiger=Object.create(animal);
+  tiger.bark=function(){
+    console.log("Wrahh!")
+  }
+  tiger.eat()
+  tiger.bark()
+
+  const bird={};
+    Object.setPrototypeOf(bird,animal)
+  bird.cik=function(){
+    console.log("cik-cik");
+    
+  }
+  bird.eat();
+  bird.cik();
+  
