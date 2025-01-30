@@ -76,9 +76,9 @@ console.log(transformArray(array,restNUmber));
 //4 cu task
 
 function findInArray(numbers, callback) {
-    for (let i = 0; i < array.length; i++) {
-      if (callback(array[i])) {
-        return array[i];
+    for (let i = 0; i < numbers.length; i++) {
+      if (callback(numbers[i])) {
+        return numbers[i];
       }
     }
 }
@@ -99,7 +99,7 @@ function findInArray(numbers, callback) {
    }
   
 let  numbers=[1,2,3,4,5,6,7,8,9,10,11,12,13,"Banana","Alma","Armud"]
-console.log(findInArray(array,firstCouplenumber));
-console.log(findInArray(array,biggerTen));
-console.log(findInArray(array,firstLetter));    
+console.log(findInArray(numbers,firstCouplenumber));
+console.log(findInArray(numbers,biggerTen));
+console.log(findInArray(numbers,firstLetter));    
 
