@@ -98,7 +98,7 @@ function findInArray(numbers, callback) {
      }
    }
   
-let  numbers=[1,2,3,4,5,6,7,8,9,10,11,12,13,"Banana","Alma","Armud"]
+let  numbers=[1,2,3,4,5,6,7,8,9,10,11,12,13,"Banan","Alma","Armud"]
 console.log(findInArray(numbers,firstCouplenumber));
 console.log(findInArray(numbers,biggerTen));
 console.log(findInArray(numbers,firstLetter));    
