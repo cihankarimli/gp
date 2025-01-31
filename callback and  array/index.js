@@ -103,3 +103,34 @@ console.log(findInArray(numbers,firstCouplenumber));
 console.log(findInArray(numbers,biggerTen));
 console.log(findInArray(numbers,firstLetter));    
 
+//5 ci task
+function processUserData(user, callback) {
+    const fullName = user.firstName+"  "+user.lastName;
+    const isAdult = user.age >= 18;
+    const emailParts = user.email.split('@');
+    const hiddenEmail = `*****@${emailParts[1]}`;
+    return callback(fullName, isAdult, hiddenEmail);
+}
+
+function getFullName(fullName, isAdult, hiddenEmail) {
+    return fullName;
+}
+
+function checkIfAdult(fullName, isAdult, hiddenEmail) {
+    return isAdult;
+}
+
+function getHiddenEmail(fullName, isAdult, hiddenEmail) {
+    return hiddenEmail;
+}
+
+const user = {
+    firstName: "Nərmin",
+    lastName: "Əliyeva",
+    age: 20,
+    email: "nermin.aliyeva@example.com"
+};
+
+console.log(processUserData(user, getFullName));
+console.log(processUserData(user, checkIfAdult));
+console.log(processUserData(user, getHiddenEmail));

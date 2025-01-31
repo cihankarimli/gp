@@ -263,6 +263,10 @@ section{
    border-radius: 7px;
    
   }
+  nav .active{
+    color:#ffc451
+  }
+  
   .card-services:hover{
     transform: translateY(-20px);
     cursor: pointer;
