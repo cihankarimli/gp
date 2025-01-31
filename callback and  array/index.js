@@ -125,10 +125,10 @@ function getHiddenEmail(fullName, isAdult, hiddenEmail) {
 }
 
 const user = {
-    firstName: "Nərmin",
-    lastName: "Əliyeva",
+    firstName: "Cihan",
+    lastName: "Kerimli",
     age: 20,
-    email: "nermin.aliyeva@example.com"
+    email: "cihan.kerimli@example.com"
 };
 
 console.log(processUserData(user, getFullName));
