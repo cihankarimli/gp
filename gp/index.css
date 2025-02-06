@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    border: 1px solid #ffc451;
+    width: 600px;
+    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(1fr,1);
+    
+}
+.box{
+    display: flex;
+}

@@ -31,15 +31,6 @@ document.querySelector('.home').addEventListener('click', function () {
 });
 
 
-
-document.querySelector('.services').addEventListener('click', function () {
-   
-    navLinks.forEach(link => link.classList.remove('active'));
-    
-    
-    this.classList.add('active');
- 
-    document.querySelector('.section-services').scrollIntoView({
-        behavior: 'smooth'
-    });
+document.getElementById("get-started").addEventListener("click", function() {
+    window.location.href = "index.html"; 
 });
