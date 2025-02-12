@@ -1,0 +1,208 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+nav{
+    margin-top: 10px;
+    display: flex;
+}
+.spotify-logo{
+    width: 50px;
+    height: 3   0px;
+    margin-left: 10px;
+    margin-right: 450px;
+}
+.home-button{
+    border: 1px solid  rgb(59, 57, 63) ;
+    width: 40px;
+    height:40px;
+    border-radius: 50%;
+    background-color: rgb(59, 57, 63) ;
+    cursor: pointer;
+    margin-right:10px ;
+
+}
+.search-input{
+    border: 1px solid  rgb(59, 57, 63);
+    background-color: rgb(59, 57, 63);
+    width: 350px;
+    height: 40px;
+    border-radius: 10px;
+    outline: none;
+    color: white;
+}
+.search-button{
+    border: 1px solid  rgb(59, 57, 63) ;
+    width: 10px;
+    height:10px;
+    border-radius: 50%;
+    background-color: rgb(59, 57, 63) ;
+    cursor: pointer;
+    margin: 10px 20px;
+    
+}
+.search{
+    background-color: rgb(59, 57, 63);
+    width: 500px;
+    height: 50px;
+    border-radius: 20px;
+    
+}
+.window{
+    margin-left: 60px;
+    background-color: rgb(59, 57, 63);
+    border: 1px solid rgb(59, 57, 63);
+}
+.search-line{
+    display: flex;
+}
+.login{
+    border: 1px solid  rgb(59, 57, 63) ;
+    width: 40px;
+    height:40px;
+    border-radius: 50%;
+    background-color: rgb(59, 57, 63) ;
+    cursor: pointer;
+    margin-left: 10px;
+   
+}
+.natification{
+    border: 1px solid  rgb(59, 57, 63) ;
+    width: 40px;
+    height:40px;
+    border-radius: 50%;
+    background-color: rgb(59, 57, 63) ;
+    cursor: pointer;
+}
+.login-line{
+    margin-left: 300px;
+    gap: 30px;
+}
+main{
+    background-color: rgb(40, 39, 44);
+    width: 80%;
+    margin:100px;
+    margin-left: 150px;
+    border-radius: 7px;
+    height: 1350px;
+}
+h1{
+    color: rgb(235,235,235);
+    font-family: 'Poppins',sans-serif;
+    font-size:40px;
+    margin-left:10px;
+    margin-top: 20px;
+    
+}
+.buttons button{
+    background-color: rgb(235,235,235);
+    padding: 7px;
+    text-align: center;
+    border-radius: 7px;
+    border: 1px solid rgb(235,235,235);
+    cursor: pointer;
+    font-size: 15px;
+}
+.buttons{
+    margin-top: 30px;
+    margin-left: 10px;
+    display: flex;
+    gap: 10px;
+    font-family: 'Poppins',sans-serif;
+}
+.buttons button:hover{
+    color: white;
+    background-color: rgb(29, 157, 12);
+    border: 1px solid rgb(29, 157, 12);
+}
+.card-wrapper{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    align-items: center;
+    justify-items: center;
+}
+.card{
+    position: relative;
+    margin-top: 30px;
+    border: 1px solid rgb(59, 57, 63);
+   width:230px;
+    padding-bottom: 50px;
+    background-color: rgb(59, 57, 63);
+    border-radius: 7px;
+
+}
+.card-img{
+    
+    width:200px;
+    height: 200px;
+    border-radius: 7px;
+    margin: 10px 13px;
+}
+.card h3{
+    margin:5px 10px;
+    color: white;
+    font-family: 'Poppins',sans-serif;
+}
+.card p{
+    font-family: 'Poppins',sans-serif;
+    color: gray;
+    font-size: 13px;
+    margin: 5px 13px;
+}
+.card button{
+    position: absolute;
+    top:150px;
+    right:30px;
+    background-color: rgb(29, 157, 12);
+    border-radius: 50%;
+    font-size: 30px;
+    width: 40px;
+    height:40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0%;
+    border: 1px solid rgb(29, 157, 12);
+    cursor: pointer;
+    
+}
+.card:hover{
+ .plus-1{
+    opacity: 100%;
+}
+.plus-2{
+    opacity: 100%;
+}
+.plus-3{
+    opacity: 100%;
+}
+.plus-4{
+    opacity: 100%;
+}
+.plus-5{
+    opacity: 100%;
+}
+}
+.playlist-card{
+    display: flex;
+       color: white;
+       gap: 10px;
+}
+.playlist-img{
+    width: 50px;
+    border-radius: 7px;
+    margin-top: 10px;
+    
+}
+.playlist-card p{
+    margin-top: 30px;
+    font-family: 'Poppins',sans-serif;
+    font-size: 15px;
+    margin-left: 10px;
+    
+}

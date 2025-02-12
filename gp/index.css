@@ -3,14 +3,27 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    width: 100dvh;
+}
 .container{
+    position: relative;
     border: 1px solid #ffc451;
     width: 600px;
     height: 300px;
+    align-items: center;
+    margin: 30% 60%;    
+}
+.inputs{
+    position: absolute;
     display: grid;
-    grid-template-columns: repeat(1fr,1);
+    margin: 10% 30%;
     
 }
-.box{
-    display: flex;
+.inputs div{
+    margin-top: 20px;
+}
+.Login{
+    margin: auto 50%;
+    margin-top: ;
 }
