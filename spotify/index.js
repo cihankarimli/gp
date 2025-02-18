@@ -29,22 +29,40 @@ let plus=document.querySelectorAll('.plus')
 let cardTitle=document.querySelectorAll('card-title')
 let listCardsimg=document.querySelectorAll('.playlist-img')
 let cardImg=document.querySelectorAll('.card-img')
+let favoritedSongsList = document.querySelector(".fav-list")
 
-for (let i = 0; i < listCardsimg.length; i++) {
-  for (let f = 0; f < listCardsimg.length; f++) {
-  
+const favoritedSongs = []
+
+// console.log("Plus: ", plus);
+// console.log("ListCard: ", listCardsimg);
+
+
+for (let i = 0; i < plus.length; i++) {
     plus[i].addEventListener('click',function () {
+
+    var img = document.createElement("img")
+    img.src=cardImg[i].src;
+    img.style.cssText='width:100px;height:100px';
+    // element.insertBefore(para, element.firstChild);
+
+
     
-      listCardsimg[i].src=cardImg[i].src
-      
-      
-    })
+    // favoritedSongsList.append(img)
+    favoritedSongsList.insert(img,favoritedSongsList.firstChild)
+
+        console.log("Favorited Songs: ", favoritedSongs)
+    });
+
+
+
+
   }
 
 
-}
 
-  
+
+
+
 
 
 
