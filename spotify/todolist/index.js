@@ -1,6 +1,5 @@
    const addButton = document.querySelector('.add');
-    const deleteButton = document.querySelector('.delete');
-    const input = document.querySelector('input');
+  const input = document.querySelector('input');
     const todoList = document.querySelector('.text-line');
 
     
@@ -22,7 +21,7 @@
         }
     });
 
-        deleteButton.addEventListener('click', function () {
+    deleteTaskButton.addEventListener('click', function () {
            todoList.removeChild(todoList.firstChild);
         
     });
