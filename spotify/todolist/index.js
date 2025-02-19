@@ -6,7 +6,7 @@
 
 
     addButton.addEventListener('click', function () {
-        const taskText = input.value;
+        const taskText = input.value.trim();
         if (taskText !== '') {
             const listItem = document.createElement('li');
             listItem.textContent = taskText;
@@ -27,10 +27,6 @@
         else{
             alert('Melumati daxil edin')
         }
-        
-       
-       
-       
     });
 
 
