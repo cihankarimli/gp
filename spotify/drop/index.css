@@ -1,0 +1,20 @@
+.drop-box{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.dragable-box{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+}
+.cards{
+    display: flex;
+    gap: 170px;
+}
+.drop-box i{
+    width: 70px;
+}
