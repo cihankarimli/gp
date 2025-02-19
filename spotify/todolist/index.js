@@ -24,6 +24,9 @@
             todoList.appendChild(listItem);
             input.value = ''; 
         }
+        else{
+            alert('Melumati daxil edin')
+        }
         
        
        
