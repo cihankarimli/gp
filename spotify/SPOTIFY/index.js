@@ -33,8 +33,7 @@ let favoritedSongsList = document.querySelector(".fav-list")
 
 const favoritedSongs = []
 
-// console.log("Plus: ", plus);
-// console.log("ListCard: ", listCardsimg);
+
 
 
 for (let i = 0; i < plus.length; i++) {
@@ -48,7 +47,7 @@ for (let i = 0; i < plus.length; i++) {
 
     
     // favoritedSongsList.append(img)
-    favoritedSongsList.insert(img,favoritedSongsList.firstChild)
+    favoritedSongsList.insertBefore(img,favoritedSongsList.firstChild)
 
         console.log("Favorited Songs: ", favoritedSongs)
     });
