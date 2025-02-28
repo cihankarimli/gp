@@ -5,19 +5,19 @@ function  Vehicle(brand,year){
 Vehicle.prototype.getinfo=function(){
     return `Brand: ${this.brand}, Year: ${this.year}`;
 }
-function car(brand,year,fuelType) {
+function Car(brand,year,fuelType) {
     Vehicle.call(this,brand,year)
     this.fuelType=fuelType
 }
 
-car.prototype=Object.create( Vehicle.prototype)
+Car.prototype=Object.create( Vehicle.prototype)
 
 
-let Car= new car('Porche',2007,'Dizel')
+let car= new Car('Porche',2007,'Dizel')
 let  vehicle=new  Vehicle('Bmw',2015)
 
-console.log(Car.getinfo());
-console.log(Car);
+console.log(car.getinfo());
+console.log(car);
 console.log(vehicle);
 
 
