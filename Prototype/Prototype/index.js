@@ -13,11 +13,11 @@ function car(brand,year,fuelType) {
 car.prototype=Object.create( Vehicle.prototype)
 
 
-let porche= new car('Porche',2007,'Dizel')
+let car= new car('Porche',2007,'Dizel')
 let  vehicle=new  Vehicle('Bmw',2015)
 
-console.log(porche.getinfo());
-console.log(porche);
+console.log(car.getinfo());
+console.log(car);
 console.log(vehicle);
 
 
